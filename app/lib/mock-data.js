@@ -3,10 +3,18 @@ const passwordManagers = [
         id: "410544b2-4001-4271-9855-fec4b6a6442a",
         name: "1Password",
         license: "proprietary",
-        platforms: ["Android", "IOS", "Linux", "macOS", "Windows"]
     }
 ];
-
+const platforms = [
+    {
+        id: "410544b2-4001-4271-9855-fec4b6a6442a",
+        linux: true,
+        macos: true, 
+        ios: true,
+        andriod: true,
+        windows: true
+    }
+]
 const features = [
     {  
         id: "410544b2-4001-4271-9855-fec4b6a6442a",
@@ -30,3 +38,9 @@ const features = [
 ];
 
 const breaches = [];
+
+module.exports = {
+    passwordManagers,
+    features
+};
+  
